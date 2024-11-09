@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y PAVAN KUMAR - Personal Portfolio</title>
+    
+    <style>
+        /* Reset and Basic Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; }
+        a { text-decoration: none; color: #3498db; }
+
+        /* Layout Styling */
+        .container { width: 90%; max-width: 1200px; margin: auto; }
+
+        /* Hero Section */
+        .hero { position: relative; text-align: left; padding: 60px 20px; background-color: #f4f4f9; }
+        .hero img { position: absolute; top: 20px; right: 20px; width: 150px; height: 150px; border-radius: 50%; }
+        .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; color: #666; }
+
+        /* About Section */
+        .about { padding: 40px 20px; }
+        .about h2 { font-size: 2em; margin-bottom: 10px; }
+        .about p { color: #555; line-height: 1.6; }
+
+        /* Skills Section */
+        .skills { background-color: #f4f4f9; padding: 40px 20px; }
+        .skills h2 { font-size: 2em; margin-bottom: 20px; text-align: center; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .skill { background-color: white; border: 1px solid #ddd; padding: 15px 20px; border-radius: 8px; font-size: 1.1em; }
+
+        /* Qualifications Section */
+        .qualifications { padding: 40px 20px; }
+        .qualifications h2 { font-size: 2em; margin-bottom: 20px; text-align: center; }
+        .qualifications-list { list-style: none; color: #555; line-height: 1.8; padding-left: 20px; }
+
+        /* Portfolio Section */
+        .portfolio { background-color: #f4f4f9; padding: 40px 20px; }
+        .portfolio h2 { font-size: 2em; margin-bottom: 20px; text-align: center; }
+        .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .project { background-color: white; border: 1px solid #ddd; padding: 20px; width: 300px; border-radius: 8px; transition: transform 0.3s; }
+        .project:hover { transform: translateY(-5px); }
+
+        /* Contact Section */
+        .contact { padding: 40px 20px; text-align: center; }
+        .contact h2 { font-size: 2em; margin-bottom: 10px; }
+        .contact-info { margin-bottom: 20px; color: #555; }
+        .contact form { display: flex; flex-direction: column; max-width: 400px; margin: auto; gap: 10px; }
+        .contact input, .contact textarea { padding: 10px; border: 1px solid #ddd; border-radius: 5px; width: 100%; }
+        .contact button { padding: 10px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .contact button:hover { background-color: #2980b9; }
+
+        /* Footer */
+        footer { background-color: #333; color: #fff; padding: 10px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Y PAVAN KUMAR</h1>
+            <p>Web Developer | Designer | Technology Enthusiast</p>
+        </div>
+        <img src="static/Images/pavan_pic.jpg" alt="Y Pavan Kumar">
+    </section>
+
+    <!-- About Section -->
+    <section class="about container">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated web developer with a passion for creating seamless and user-friendly web experiences.
+            With a background in design and a knack for solving problems, I bring a blend of creativity and technical
+            expertise to my projects.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="container skills-list">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Django</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section class="qualifications container">
+        <h2>Qualifications</h2>
+        <ul class="qualifications-list">
+            <li>Pursuing BTech in KLH University</li>
+            <li>Schooling from Fortune Butterfly Senior Secondary School</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="container projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Build a web or mobile app that helps users track income, expenses, and savings goals. Includes budget categorization and spending analysis.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Real-Time Weather App with API integration to display live weather data and a 7-day forecast.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Campus Event Management App with event creation, student registration, and attendance tracking features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: pavankumar07ipl@gmail.com</p>
+            <p>Phone: +919391138035</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Y PAVAN KUMAR | All Rights Reserved</p>
+        <p>Follow me on <a href="https://github.com/pavansh07">GitHub</a></p>
+        <p>Follow me on <a href="https://twitter.com/yourhandle">Twitter</a></p>
+    </footer>
+
+</body>
+</html>
